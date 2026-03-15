@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Zoevra Linen</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+header{
+padding:40px;
+font-size:45px;
+letter-spacing:6px;
+font-weight:bold;
+}
+
+header span{
+color:gold;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:50px;
+letter-spacing:6px;
+}
+
+.hero p{
+color:#ccc;
+font-size:18px;
+max-width:600px;
+margin:auto;
+}
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.card{
+background:#151515;
+padding:20px;
+border-radius:10px;
+width:260px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin-top:15px;
+}
+
+footer{
+margin-top:40px;
+padding:30px;
+border-top:1px solid #333;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+Zoevra <span>Linen</span>
+</header>
+
+<section class="hero">
+
+<h1>Luxury Linen Collection</h1>
+
+<p>
+Experience the elegance of premium linen crafted for style,
+comfort and timeless luxury. Zoevra brings the finest linen
+fabric designed for those who appreciate true class.
+</p>
+
+</section>
+
+<section class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1593032465171-8c9f6c9e3c8c">
+
+<h3>Royal White Linen</h3>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+
+<h3>Premium Black Linen</h3>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+
+<h3>Luxury Beige Linen</h3>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Zoevra Linen  
+Created By Ozaif & Ehtamam
+
+</footer>
+
+</body>
+</html>
