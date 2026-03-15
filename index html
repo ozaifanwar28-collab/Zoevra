@@ -11,54 +11,80 @@ margin:0;
 font-family:Arial;
 background:#0b0b0b;
 color:white;
-text-align:center;
 }
 
-header{
-padding:40px;
-font-size:45px;
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:black;
+border-bottom:1px solid #333;
+}
+
+.logo{
+font-size:30px;
 letter-spacing:6px;
 font-weight:bold;
 }
 
-header span{
+.logo span{
 color:gold;
 }
 
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:16px;
+}
+
+/* HERO */
+
 .hero{
-padding:60px 20px;
+text-align:center;
+padding:100px 20px;
 }
 
 .hero h1{
-font-size:50px;
-letter-spacing:6px;
+font-size:60px;
+letter-spacing:8px;
 }
 
 .hero p{
-color:#ccc;
-font-size:18px;
 max-width:600px;
 margin:auto;
+color:#ccc;
+font-size:18px;
 }
+
+.button{
+margin-top:30px;
+padding:15px 35px;
+background:gold;
+border:none;
+font-size:16px;
+cursor:pointer;
+}
+
+/* PRODUCTS */
 
 .products{
 display:flex;
+flex-wrap:wrap;
 justify-content:center;
 gap:30px;
-flex-wrap:wrap;
-padding:40px;
+padding:60px 20px;
 }
 
 .card{
 background:#151515;
-padding:20px;
-border-radius:10px;
 width:260px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
+border-radius:10px;
+padding:15px;
+text-align:center;
 }
 
 .card img{
@@ -67,11 +93,13 @@ border-radius:10px;
 }
 
 .card h3{
-margin-top:15px;
+margin-top:10px;
 }
 
+/* FOOTER */
+
 footer{
-margin-top:40px;
+text-align:center;
 padding:30px;
 border-top:1px solid #333;
 color:#aaa;
@@ -83,43 +111,60 @@ color:#aaa;
 
 <body>
 
-<header>
-Zoevra <span>Linen</span>
-</header>
+<nav>
+
+<div class="logo">
+ZOE<span>VRA</span>
+</div>
+
+<div>
+<a href="#">Home</a>
+<a href="#">Collection</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
 
 <section class="hero">
 
 <h1>Luxury Linen Collection</h1>
 
 <p>
-Experience the elegance of premium linen crafted for style,
-comfort and timeless luxury. Zoevra brings the finest linen
-fabric designed for those who appreciate true class.
+Welcome to Zoevra — a premium linen fashion brand crafted for elegance,
+comfort and timeless luxury. Discover the finest linen clothing designed
+for those who live with style.
 </p>
 
+<button class="button">Explore Collection</button>
+
 </section>
+
 
 <section class="products">
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1593032465171-8c9f6c9e3c8c">
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
 
 <h3>Royal White Linen</h3>
 
 </div>
 
+
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+<img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
 
 <h3>Premium Black Linen</h3>
 
 </div>
 
+
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+<img src="https://images.unsplash.com/photo-1593032465171-8c9f6c9e3c8c">
 
 <h3>Luxury Beige Linen</h3>
 
@@ -127,12 +172,14 @@ fabric designed for those who appreciate true class.
 
 </section>
 
+
 <footer>
 
 © 2026 Zoevra Linen  
 Created By Ozaif & Ehtamam
 
 </footer>
+
 
 </body>
 </html>
